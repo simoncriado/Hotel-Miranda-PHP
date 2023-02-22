@@ -1,5 +1,5 @@
 <?php
-include "./resources/db/db.php";
+include "./db.php";
 require "vendor/autoload.php";
 use eftec\bladeone\BladeOne;
 $blade = new BladeOne();
