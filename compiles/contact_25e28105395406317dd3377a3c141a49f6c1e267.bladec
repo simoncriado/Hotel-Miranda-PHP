@@ -115,17 +115,18 @@
  <button class="button-map button-matrix" style="right: 10px">
  Get hotels distance
  </button>
- <div id="map"></div>
+ <div id="map" ></div>
  <div class="location-list"></div>
  </section>
  <!-- Contact Form Section -->
- <section class="contactFormSection">
+ <form class="contactFormSection"  action="/contact.php" method="POST">
  <div class="contactFormSection__firstContainer">
  <div class="contactFormSection__firstContainer__input">
  <input
  class="contactFormSection__firstContainer__input__field"
  type="text"
  placeholder="Your full name"
+ name="name"
  />
  <img
  class="contactFormSection__firstContainer__input__icon"
@@ -138,6 +139,7 @@
  class="contactFormSection__firstContainer__input__field"
  type="text"
  placeholder="Add phone number"
+ name="phone"
  />
  <img
  class="contactFormSection__firstContainer__input__icon"
@@ -152,6 +154,7 @@
  class="contactFormSection__firstContainer__input__field"
  type="text"
  placeholder="Enter email address"
+ name="email"
  />
  <img
  class="contactFormSection__firstContainer__input__icon"
@@ -164,6 +167,7 @@
  class="contactFormSection__firstContainer__input__field"
  type="text"
  placeholder="Enter subject"
+ name="header"
  />
  <img
  class="contactFormSection__firstContainer__input__icon"
@@ -178,16 +182,17 @@
  class="contactFormSection__firstContainer__input__field--big"
  type="text"
  placeholder="Enter message"
+ name="comment"
  />
  <img
  class="contactFormSection__firstContainer__input__icon"
  src="./resources/assets/icons/contactPen.png"
  alt="Contact icon"
  />
- </div>
- </div>
- <button class="btn">SEND</button>
- </section>
+ </div>  
+ <button type="submit" class="btn">SEND</button>
+</div>
+</form>
  </main>
  <?php $this->stopSection(); ?>
 

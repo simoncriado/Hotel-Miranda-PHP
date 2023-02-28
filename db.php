@@ -12,6 +12,7 @@ $dbname = $_ENV['DB_NAME'];
 // $conn = new mysqli("localhost", "hotelMirandaAdmin", "hotelmiranda123", "hotelmiranda");
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

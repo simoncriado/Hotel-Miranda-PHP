@@ -30,22 +30,31 @@
       </section>
       <!-- Offer Room Section -->
       <section class="offerRoomSection">
+        @foreach ($rooms as $room)
         <div class="offerRoomSection__room">
           <div class="offerRoomSection__room__priceContainer">
-            <p class="offerRoomSection__room__priceContainer--gold">$500</p>
+            <p class="offerRoomSection__room__priceContainer--gold">${{$room["room_rate"] /100}}</p>
             <p class="offerRoomSection__room__priceContainer--perNightGold">
               /Night
             </p>
-            <p class="offerRoomSection__room__priceContainer--red">$345</p>
+            <p class="offerRoomSection__room__priceContainer--red">${{$room["room_offer"] /100}}</p>
             <p class="offerRoomSection__room__priceContainer--perNightRed">
               /Night
             </p>
           </div>
-          <img
-            class="offerRoomSection__room__img"
-            src="./resources/assets/images/room1.jpg"
-            alt="Room image"
-          />
+          @if (strpos($room["photo"], 'http') === false)
+              <img
+                class="offerRoomSection__room__img"
+                src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
+                alt="Hotel room"
+              />
+              @else
+              <img
+                class="offerRoomSection__room__img"
+                src={{$room["photo"]}}
+                alt="Hotel room"
+              />
+              @endif
           <div class="offerRoomSection__room__bigContainer">
             <div
               class="offerRoomSection__room__bigContainer__priceContainerDesktop"
@@ -53,7 +62,7 @@
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--gold"
               >
-                $500
+              ${{$room["room_rate"] /100}}
               </p>
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--perNightGold"
@@ -63,7 +72,7 @@
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--red"
               >
-                $345
+              ${{$room["room_offer"] /100}}
               </p>
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--perNightRed"
@@ -72,22 +81,17 @@
               </p>
             </div>
             <p class="offerRoomSection__room__bigContainer__subtitle">
-              DOUBLE BED
+            UNIQUE EXPERIENCE
             </p>
             <h1 class="offerRoomSection__room__bigContainer__title">
-              Luxury Double Bed
+            {{$room["bed_type"]}}
             </h1>
             <div class="offerRoomSection__room__bigContainer__separation"></div>
             <div class="offerRoomSection__room__bigContainer__smallContainer">
               <p
                 class="offerRoomSection__room__bigContainer__smallContainer__description"
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehend erit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
+              {{$room["description"]}}
               </p>
               <div
                 class="offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer"
@@ -193,11 +197,13 @@
                   </p>
                 </div>
               </div>
-              <button class="btn">BOOK NOW</button>
+              <a href="./room-details.php?id={{$room["id"]}}" class="btn">BOOK NOW</a>
             </div>
           </div>
         </div>
-        <div class="offerRoomSection__room">
+        @endforeach
+        
+        <!-- <div class="offerRoomSection__room">
           <div class="offerRoomSection__room__priceContainer">
             <p class="offerRoomSection__room__priceContainer--gold">$500</p>
             <p class="offerRoomSection__room__priceContainer--perNightGold">
@@ -697,7 +703,7 @@
               <button class="btn">BOOK NOW</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <!-- Popular Rooms Section -->
       <section

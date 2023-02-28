@@ -33,6 +33,7 @@
       <div class="swiperRoomsList roomSlider__slides">
         <div >
           <div class="swiper-slide">
+            
             @foreach ($rooms as $room)
             <div style="position: relative">
               <img
@@ -40,7 +41,7 @@
                 src="./resources/assets/images/roomExtras.png"
                 alt="Room extras"
               />
-              @if (strpos($room[3], 'http') === false)
+              @if (strpos($room["photo"], 'http') === false)
               <img
                 class="roomSlider__slides--roomImg"
                 src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
@@ -49,23 +50,23 @@
               @else
               <img
                 class="roomSlider__slides--roomImg"
-                src={{$room[3]}}
+                src={{$room["photo"]}}
                 alt="Hotel room"
               />
               @endif
-              <h1 class="roomSlider__slides--title">{{$room[12]}}</h1>
+              <h1 class="roomSlider__slides--title">{{$room["bed_type"]}}</h1>
               <p class="roomSlider__slides--description">
-              {{$room[8]}}
+              {{$room["description"]}}
               </p>
               <div class="roomSlider__slides__container">
                 <p class="roomSlider__slides__container--price">
-                  ${{$room[13] /100}}<span
+                  ${{$room["room_rate"] /100}}<span
                     class="roomSlider__slides__container--price--perNight"
                     >/Night</span
                   >
                 </p>
                 <a
-                  href="./room-details.php?id={{$room[0]}}"
+                  href="./room-details.php?id={{$room["id"]}}"
                   class="roomSlider__slides__container--bookNow"
                   >Book now</a
                 >

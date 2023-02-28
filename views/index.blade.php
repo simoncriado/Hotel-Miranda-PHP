@@ -45,7 +45,7 @@
 
       <!-- Availability Section -->
       <section class="availabilitySection">
-        <div class="availabilitySection__container">
+        <form class="availabilitySection__container" action="/availability.php" method="POST">
           <div
             class="availabilitySection__container availabilitySection__container__arrival"
           >
@@ -57,6 +57,7 @@
             <input
               class="availabilitySection__container__arrival availabilitySection__container__arrival--input"
               type="date"
+              name="checkIn"
             />
           </div>
           <div
@@ -70,14 +71,16 @@
             <input
               class="availabilitySection__container__departure availabilitySection__container__departure--input"
               type="date"
+              name="checkOut"
             />
           </div>
           <button
             class="availabilitySection__container availabilitySection__container__button"
+            
           >
             CHECK AVAILABILITY
           </button>
-        </div>
+        </form>
       </section>
 
       <!-- About Us Section -->
@@ -161,163 +164,31 @@
                 src="./resources/assets/images/roomExtras.png"
                 alt="Room extras"
               />
-              @if ($room[3] === "")
+              @if ($room["photo"] === "")
               <img
                 class="roomSlider__slides--roomImg"
                 src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
                 alt="Hotel room"
               />
               @endif
-              @if ($room[3] !== "")
+              @if ($room["photo"] !== "")
               <img
                 class="roomSlider__slides--roomImg"
-                src={{$room[3]}}
+                src={{$room["photo"]}}
                 alt="Hotel room"
               />
               @endif
-              <h1 class="roomSlider__slides--title">{{$room[12]}}</h1>
+              <h1 class="roomSlider__slides--title">{{$room["bed_type"]}}</h1>
               <p class="roomSlider__slides--description">
-              {{$room[8]}}
+              {{$room["description"]}}
               </p>
               <p class="roomSlider__slides--price">
-              ${{$room[13] /100}}<span class="roomSlider__slides--price--perNight"
+              ${{$room["room_rate"] /100}}<span class="roomSlider__slides--price--perNight"
                   >/Night</span
                 >
               </p>
             </div>
             @endforeach
-            <!-- <div class="swiper-slide">
-              <img
-                class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
-                alt="Room extras"
-              />
-              <img
-                class="roomSlider__slides--roomImg"
-                src="./resources/assets/images/room1.jpg"
-                alt="Hotel room"
-              />
-              <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
-              <p class="roomSlider__slides--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="roomSlider__slides--price">
-                $345<span class="roomSlider__slides--price--perNight"
-                  >/Night</span
-                >
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
-                alt="Room extras"
-              />
-              <img
-                class="roomSlider__slides--roomImg"
-                src="./resources/assets/images/room2.jpg"
-                alt="Hotel room"
-              />
-              <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
-              <p class="roomSlider__slides--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="roomSlider__slides--price">
-                $345<span class="roomSlider__slides--price--perNight"
-                  >/Night</span
-                >
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
-                alt="Room extras"
-              />
-              <img
-                class="roomSlider__slides--roomImg"
-                src="./resources/assets/images/room3.jpg"
-                alt="Hotel room"
-              />
-              <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
-              <p class="roomSlider__slides--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="roomSlider__slides--price">
-                $345<span class="roomSlider__slides--price--perNight"
-                  >/Night</span
-                >
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
-                alt="Room extras"
-              />
-              <img
-                class="roomSlider__slides--roomImg"
-                src="./resources/assets/images/room4.jpeg"
-                alt="Hotel room"
-              />
-              <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
-              <p class="roomSlider__slides--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="roomSlider__slides--price">
-                $345<span class="roomSlider__slides--price--perNight"
-                  >/Night</span
-                >
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
-                alt="Room extras"
-              />
-              <img
-                class="roomSlider__slides--roomImg"
-                src="./resources/assets/images/room5.jpeg"
-                alt="Hotel room"
-              />
-              <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
-              <p class="roomSlider__slides--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="roomSlider__slides--price">
-                $345<span class="roomSlider__slides--price--perNight"
-                  >/Night</span
-                >
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
-                alt="Room extras"
-              />
-              <img
-                class="roomSlider__slides--roomImg"
-                src="./resources/assets/images/room6.jpeg"
-                alt="Hotel room"
-              />
-              <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
-              <p class="roomSlider__slides--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="roomSlider__slides--price">
-                $345<span class="roomSlider__slides--price--perNight"
-                  >/Night</span
-                >
-              </p>
-            </div> -->
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>

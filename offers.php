@@ -6,12 +6,9 @@ use eftec\bladeone\BladeOne;
 
 $blade = new BladeOne();
 
-// $sql = "SELECT * FROM rooms WHERE offer > 0 AND status = 0;";
-// $result = $conn->query($sql);
+$sql = "SELECT * FROM rooms WHERE discount = 'Yes' ORDER BY RAND() LIMIT 4;";
+$result = $conn->query($sql);
 
-$sql = "SELECT * FROM rooms ORDER BY RAND() LIMIT 3;";
-$result2 = $conn->query($sql);
-
-echo $blade->run("offers", ["rooms" => $result2->fetch_all()]);
+echo $blade->run("offers", ["rooms" => $result->fetch_all(MYSQLI_ASSOC)]);
 
 $conn->close();

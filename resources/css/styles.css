@@ -318,7 +318,7 @@
   line-height: 1.7rem;
   letter-spacing: -0.048rem;
   border-left: 2px solid #222222;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 
 .footer {
@@ -365,7 +365,7 @@
   align-items: center;
   height: 8rem;
   width: 8rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -400,7 +400,7 @@
   background-color: #f8f8f8;
 }
 .footer__container1__subcontainer1__icons svg:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
 }
 .footer__container1__subcontainer1__icons svg:hover path {
   fill: #ffffff;
@@ -593,7 +593,7 @@
   height: 6rem;
   width: 22rem;
   padding: 2.1rem 4.5rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -657,7 +657,7 @@
   background-color: #222222;
   border-style: none;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #BEAD8E;
+  border-bottom: 2px solid #bead8e;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -692,7 +692,7 @@
   background-color: #222222;
   border-style: none;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #BEAD8E;
+  border-bottom: 2px solid #bead8e;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -710,7 +710,7 @@
   height: 6rem;
   width: fit-content;
   padding: 2.3rem 4.5rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -739,7 +739,7 @@
   }
 }
 .aboutSection__info {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 @media all and (min-width: 1000px) {
   .aboutSection__info {
@@ -788,7 +788,7 @@
   height: 6rem;
   width: fit-content;
   padding: 2.3rem 5.6rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -983,7 +983,8 @@
   padding-top: 4.4rem;
   height: fit-content;
 }
-.roomSlider__slides-button-prev, .roomSlider__slides-button-next,
+.roomSlider__slides-button-prev,
+.roomSlider__slides-button-next,
 .roomSlider .swiper-button-prev,
 .roomSlider .swiper-button-next {
   user-select: none;
@@ -1001,15 +1002,17 @@
   font-weight: 700;
   cursor: pointer;
 }
-.roomSlider__slides-button-prev:after, .roomSlider__slides-button-next:after,
+.roomSlider__slides-button-prev:after,
+.roomSlider__slides-button-next:after,
 .roomSlider .swiper-button-prev:after,
 .roomSlider .swiper-button-next:after {
   font-size: 1rem;
 }
-.roomSlider__slides-button-prev:hover, .roomSlider__slides-button-next:hover,
+.roomSlider__slides-button-prev:hover,
+.roomSlider__slides-button-next:hover,
 .roomSlider .swiper-button-prev:hover,
 .roomSlider .swiper-button-next:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   color: #ffffff;
 }
 .roomSlider__slides-button-prev,
@@ -1047,7 +1050,7 @@
 }
 @media all and (min-width: 1000px) {
   .roomSlider__slides--extras,
-.roomSlider .swiper--extras {
+  .roomSlider .swiper--extras {
     opacity: 0;
   }
 }
@@ -1076,7 +1079,7 @@
 }
 @media all and (min-width: 1000px) {
   .roomSlider__slides--title,
-.roomSlider .swiper--title {
+  .roomSlider .swiper--title {
     opacity: 0;
   }
 }
@@ -1092,7 +1095,7 @@
 }
 @media all and (min-width: 1000px) {
   .roomSlider__slides--description,
-.roomSlider .swiper--description {
+  .roomSlider .swiper--description {
     opacity: 0;
   }
 }
@@ -1104,11 +1107,11 @@
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.3rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 @media all and (min-width: 1000px) {
   .roomSlider__slides--price,
-.roomSlider .swiper--price {
+  .roomSlider .swiper--price {
     opacity: 0;
   }
 }
@@ -1120,7 +1123,7 @@
 }
 @media all and (min-width: 1000px) {
   .roomSlider__slides--price--perNight,
-.roomSlider .swiper--price--perNight {
+  .roomSlider .swiper--price--perNight {
     opacity: 0;
   }
 }
@@ -1131,7 +1134,7 @@
 }
 @media all and (min-width: 1000px) {
   .videoSection {
-    background: linear-gradient(90deg, #222222 70%, #BEAD8E 60%);
+    background: linear-gradient(90deg, #222222 70%, #bead8e 60%);
     margin-top: 10rem;
     position: relative;
   }
@@ -1144,7 +1147,7 @@
   font-size: 1.4rem;
   line-height: 1.5rem;
   letter-spacing: 0.28rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 @media all and (min-width: 1000px) {
   .videoSection__subtitle {
@@ -1174,7 +1177,7 @@
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.4rem;
-  color: #C2C2C2;
+  color: #c2c2c2;
 }
 @media all and (min-width: 1000px) {
   .videoSection__description {
@@ -1218,7 +1221,7 @@
   height: 6rem;
   width: fit-content;
   padding: 2.3rem 5.6rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1271,7 +1274,7 @@
 }
 @media all and (min-width: 1000px) {
   .featuresSection__slides,
-.featuresSection .swiperFeatures {
+  .featuresSection .swiperFeatures {
     display: none;
   }
 }
@@ -1281,11 +1284,11 @@
   justify-content: center;
   height: 0.8rem;
   margin-top: 3.2rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .featuresSection__slides-pagination .swiper-pagination-bullet-active,
 .featuresSection .swiperFeatures-pagination .swiper-pagination-bullet-active {
-  background: #BEAD8E;
+  background: #bead8e;
 }
 .featuresSection__slides__container,
 .featuresSection .swiperFeatures__container {
@@ -1454,7 +1457,8 @@
   padding-top: 4.4rem;
   height: fit-content;
 }
-.menuSection__slides-button-prev, .menuSection__slides-button-next,
+.menuSection__slides-button-prev,
+.menuSection__slides-button-next,
 .menuSection .swiperMenu-button-prev,
 .menuSection .swiperMenu-button-next {
   user-select: none;
@@ -1466,7 +1470,7 @@
   width: 3.6rem;
   height: 3.6rem;
   z-index: 99;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: #111111;
@@ -1474,22 +1478,25 @@
   cursor: pointer;
 }
 @media all and (min-width: 1000px) {
-  .menuSection__slides-button-prev, .menuSection__slides-button-next,
-.menuSection .swiperMenu-button-prev,
-.menuSection .swiperMenu-button-next {
+  .menuSection__slides-button-prev,
+  .menuSection__slides-button-next,
+  .menuSection .swiperMenu-button-prev,
+  .menuSection .swiperMenu-button-next {
     bottom: auto;
     top: -5rem;
   }
 }
-.menuSection__slides-button-prev:after, .menuSection__slides-button-next:after,
+.menuSection__slides-button-prev:after,
+.menuSection__slides-button-next:after,
 .menuSection .swiperMenu-button-prev:after,
 .menuSection .swiperMenu-button-next:after {
   font-size: 1rem;
 }
-.menuSection__slides-button-prev:hover, .menuSection__slides-button-next:hover,
+.menuSection__slides-button-prev:hover,
+.menuSection__slides-button-next:hover,
 .menuSection .swiperMenu-button-prev:hover,
 .menuSection .swiperMenu-button-next:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   color: #ffffff;
 }
 .menuSection__slides-button-prev,
@@ -1500,7 +1507,9 @@
 .menuSection .swiperMenu-button-next {
   right: 0;
 }
-.menuSection__slides__part1, .menuSection__slides__part2, .menuSection__slides__part3,
+.menuSection__slides__part1,
+.menuSection__slides__part2,
+.menuSection__slides__part3,
 .menuSection .swiperMenu__part1,
 .menuSection .swiperMenu__part2,
 .menuSection .swiperMenu__part3 {
@@ -1509,68 +1518,130 @@
   margin-bottom: 1.6rem;
 }
 @media all and (min-width: 1000px) {
-  .menuSection__slides__part1:hover, .menuSection__slides__part2:hover, .menuSection__slides__part3:hover,
-.menuSection .swiperMenu__part1:hover,
-.menuSection .swiperMenu__part2:hover,
-.menuSection .swiperMenu__part3:hover {
+  .menuSection__slides__part1:hover,
+  .menuSection__slides__part2:hover,
+  .menuSection__slides__part3:hover,
+  .menuSection .swiperMenu__part1:hover,
+  .menuSection .swiperMenu__part2:hover,
+  .menuSection .swiperMenu__part3:hover {
     background-color: #222222;
   }
-  .menuSection__slides__part1:hover .menuSection__slides__part1__container2--title,
-.menuSection__slides__part1:hover .menuSection__slides__part1__container2--description,
-.menuSection__slides__part1:hover .menuSection__slides__part2__container2--title,
-.menuSection__slides__part1:hover .menuSection__slides__part2__container2--description,
-.menuSection__slides__part1:hover .menuSection__slides__part3__container2--title,
-.menuSection__slides__part1:hover .menuSection__slides__part3__container2--description, .menuSection__slides__part2:hover .menuSection__slides__part1__container2--title,
-.menuSection__slides__part2:hover .menuSection__slides__part1__container2--description,
-.menuSection__slides__part2:hover .menuSection__slides__part2__container2--title,
-.menuSection__slides__part2:hover .menuSection__slides__part2__container2--description,
-.menuSection__slides__part2:hover .menuSection__slides__part3__container2--title,
-.menuSection__slides__part2:hover .menuSection__slides__part3__container2--description, .menuSection__slides__part3:hover .menuSection__slides__part1__container2--title,
-.menuSection__slides__part3:hover .menuSection__slides__part1__container2--description,
-.menuSection__slides__part3:hover .menuSection__slides__part2__container2--title,
-.menuSection__slides__part3:hover .menuSection__slides__part2__container2--description,
-.menuSection__slides__part3:hover .menuSection__slides__part3__container2--title,
-.menuSection__slides__part3:hover .menuSection__slides__part3__container2--description,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part1__container2--title,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part1__container2--description,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part2__container2--title,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part2__container2--description,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part3__container2--title,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part3__container2--description,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part1__container2--title,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part1__container2--description,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part2__container2--title,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part2__container2--description,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part3__container2--title,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part3__container2--description,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part1__container2--title,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part1__container2--description,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part2__container2--title,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part2__container2--description,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part3__container2--title,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part3__container2--description {
+  .menuSection__slides__part1:hover
+    .menuSection__slides__part1__container2--title,
+  .menuSection__slides__part1:hover
+    .menuSection__slides__part1__container2--description,
+  .menuSection__slides__part1:hover
+    .menuSection__slides__part2__container2--title,
+  .menuSection__slides__part1:hover
+    .menuSection__slides__part2__container2--description,
+  .menuSection__slides__part1:hover
+    .menuSection__slides__part3__container2--title,
+  .menuSection__slides__part1:hover
+    .menuSection__slides__part3__container2--description,
+  .menuSection__slides__part2:hover
+    .menuSection__slides__part1__container2--title,
+  .menuSection__slides__part2:hover
+    .menuSection__slides__part1__container2--description,
+  .menuSection__slides__part2:hover
+    .menuSection__slides__part2__container2--title,
+  .menuSection__slides__part2:hover
+    .menuSection__slides__part2__container2--description,
+  .menuSection__slides__part2:hover
+    .menuSection__slides__part3__container2--title,
+  .menuSection__slides__part2:hover
+    .menuSection__slides__part3__container2--description,
+  .menuSection__slides__part3:hover
+    .menuSection__slides__part1__container2--title,
+  .menuSection__slides__part3:hover
+    .menuSection__slides__part1__container2--description,
+  .menuSection__slides__part3:hover
+    .menuSection__slides__part2__container2--title,
+  .menuSection__slides__part3:hover
+    .menuSection__slides__part2__container2--description,
+  .menuSection__slides__part3:hover
+    .menuSection__slides__part3__container2--title,
+  .menuSection__slides__part3:hover
+    .menuSection__slides__part3__container2--description,
+  .menuSection
+    .swiperMenu__part1:hover
+    .menuSection__slides__part1__container2--title,
+  .menuSection
+    .swiperMenu__part1:hover
+    .menuSection__slides__part1__container2--description,
+  .menuSection
+    .swiperMenu__part1:hover
+    .menuSection__slides__part2__container2--title,
+  .menuSection
+    .swiperMenu__part1:hover
+    .menuSection__slides__part2__container2--description,
+  .menuSection
+    .swiperMenu__part1:hover
+    .menuSection__slides__part3__container2--title,
+  .menuSection
+    .swiperMenu__part1:hover
+    .menuSection__slides__part3__container2--description,
+  .menuSection
+    .swiperMenu__part2:hover
+    .menuSection__slides__part1__container2--title,
+  .menuSection
+    .swiperMenu__part2:hover
+    .menuSection__slides__part1__container2--description,
+  .menuSection
+    .swiperMenu__part2:hover
+    .menuSection__slides__part2__container2--title,
+  .menuSection
+    .swiperMenu__part2:hover
+    .menuSection__slides__part2__container2--description,
+  .menuSection
+    .swiperMenu__part2:hover
+    .menuSection__slides__part3__container2--title,
+  .menuSection
+    .swiperMenu__part2:hover
+    .menuSection__slides__part3__container2--description,
+  .menuSection
+    .swiperMenu__part3:hover
+    .menuSection__slides__part1__container2--title,
+  .menuSection
+    .swiperMenu__part3:hover
+    .menuSection__slides__part1__container2--description,
+  .menuSection
+    .swiperMenu__part3:hover
+    .menuSection__slides__part2__container2--title,
+  .menuSection
+    .swiperMenu__part3:hover
+    .menuSection__slides__part2__container2--description,
+  .menuSection
+    .swiperMenu__part3:hover
+    .menuSection__slides__part3__container2--title,
+  .menuSection
+    .swiperMenu__part3:hover
+    .menuSection__slides__part3__container2--description {
     color: #ffffff;
   }
   .menuSection__slides__part1:hover .menuSection__slides__part1--arrow,
-.menuSection__slides__part1:hover .menuSection__slides__part2--arrow,
-.menuSection__slides__part1:hover .menuSection__slides__part3--arrow, .menuSection__slides__part2:hover .menuSection__slides__part1--arrow,
-.menuSection__slides__part2:hover .menuSection__slides__part2--arrow,
-.menuSection__slides__part2:hover .menuSection__slides__part3--arrow, .menuSection__slides__part3:hover .menuSection__slides__part1--arrow,
-.menuSection__slides__part3:hover .menuSection__slides__part2--arrow,
-.menuSection__slides__part3:hover .menuSection__slides__part3--arrow,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part1--arrow,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part2--arrow,
-.menuSection .swiperMenu__part1:hover .menuSection__slides__part3--arrow,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part1--arrow,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part2--arrow,
-.menuSection .swiperMenu__part2:hover .menuSection__slides__part3--arrow,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part1--arrow,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part2--arrow,
-.menuSection .swiperMenu__part3:hover .menuSection__slides__part3--arrow {
+  .menuSection__slides__part1:hover .menuSection__slides__part2--arrow,
+  .menuSection__slides__part1:hover .menuSection__slides__part3--arrow,
+  .menuSection__slides__part2:hover .menuSection__slides__part1--arrow,
+  .menuSection__slides__part2:hover .menuSection__slides__part2--arrow,
+  .menuSection__slides__part2:hover .menuSection__slides__part3--arrow,
+  .menuSection__slides__part3:hover .menuSection__slides__part1--arrow,
+  .menuSection__slides__part3:hover .menuSection__slides__part2--arrow,
+  .menuSection__slides__part3:hover .menuSection__slides__part3--arrow,
+  .menuSection .swiperMenu__part1:hover .menuSection__slides__part1--arrow,
+  .menuSection .swiperMenu__part1:hover .menuSection__slides__part2--arrow,
+  .menuSection .swiperMenu__part1:hover .menuSection__slides__part3--arrow,
+  .menuSection .swiperMenu__part2:hover .menuSection__slides__part1--arrow,
+  .menuSection .swiperMenu__part2:hover .menuSection__slides__part2--arrow,
+  .menuSection .swiperMenu__part2:hover .menuSection__slides__part3--arrow,
+  .menuSection .swiperMenu__part3:hover .menuSection__slides__part1--arrow,
+  .menuSection .swiperMenu__part3:hover .menuSection__slides__part2--arrow,
+  .menuSection .swiperMenu__part3:hover .menuSection__slides__part3--arrow {
     display: block;
   }
 }
-.menuSection__slides__part1__container--icon, .menuSection__slides__part2__container--icon, .menuSection__slides__part3__container--icon,
+.menuSection__slides__part1__container--icon,
+.menuSection__slides__part2__container--icon,
+.menuSection__slides__part3__container--icon,
 .menuSection .swiperMenu__part1__container--icon,
 .menuSection .swiperMenu__part2__container--icon,
 .menuSection .swiperMenu__part3__container--icon {
@@ -1578,7 +1649,9 @@
   height: 100%;
   object-fit: cover;
 }
-.menuSection__slides__part1__container2, .menuSection__slides__part2__container2, .menuSection__slides__part3__container2,
+.menuSection__slides__part1__container2,
+.menuSection__slides__part2__container2,
+.menuSection__slides__part3__container2,
 .menuSection .swiperMenu__part1__container2,
 .menuSection .swiperMenu__part2__container2,
 .menuSection .swiperMenu__part3__container2 {
@@ -1588,15 +1661,19 @@
   padding-left: 3rem;
 }
 @media all and (min-width: 1000px) {
-  .menuSection__slides__part1__container2, .menuSection__slides__part2__container2, .menuSection__slides__part3__container2,
-.menuSection .swiperMenu__part1__container2,
-.menuSection .swiperMenu__part2__container2,
-.menuSection .swiperMenu__part3__container2 {
+  .menuSection__slides__part1__container2,
+  .menuSection__slides__part2__container2,
+  .menuSection__slides__part3__container2,
+  .menuSection .swiperMenu__part1__container2,
+  .menuSection .swiperMenu__part2__container2,
+  .menuSection .swiperMenu__part3__container2 {
     flex-grow: 2;
     padding: 1rem 0 1rem 3rem;
   }
 }
-.menuSection__slides__part1__container2--title, .menuSection__slides__part2__container2--title, .menuSection__slides__part3__container2--title,
+.menuSection__slides__part1__container2--title,
+.menuSection__slides__part2__container2--title,
+.menuSection__slides__part3__container2--title,
 .menuSection .swiperMenu__part1__container2--title,
 .menuSection .swiperMenu__part2__container2--title,
 .menuSection .swiperMenu__part3__container2--title {
@@ -1609,7 +1686,9 @@
   letter-spacing: -0.072rem;
   color: #222222;
 }
-.menuSection__slides__part1__container2--description, .menuSection__slides__part2__container2--description, .menuSection__slides__part3__container2--description,
+.menuSection__slides__part1__container2--description,
+.menuSection__slides__part2__container2--description,
+.menuSection__slides__part3__container2--description,
 .menuSection .swiperMenu__part1__container2--description,
 .menuSection .swiperMenu__part2__container2--description,
 .menuSection .swiperMenu__part3__container2--description {
@@ -1620,7 +1699,9 @@
   line-height: 2.4rem;
   color: #777777;
 }
-.menuSection__slides__part1--arrow, .menuSection__slides__part2--arrow, .menuSection__slides__part3--arrow,
+.menuSection__slides__part1--arrow,
+.menuSection__slides__part2--arrow,
+.menuSection__slides__part3--arrow,
 .menuSection .swiperMenu__part1--arrow,
 .menuSection .swiperMenu__part2--arrow,
 .menuSection .swiperMenu__part3--arrow {
@@ -1652,10 +1733,10 @@
   justify-content: center;
   height: 0.8rem;
   margin-top: 3.2rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .menuSection .swiperMenuImages-pagination .swiper-pagination-bullet-active {
-  background: #BEAD8E;
+  background: #bead8e;
 }
 .menuSection__imagesDesktop {
   padding-top: 12rem;
@@ -1787,12 +1868,14 @@
   align-items: center;
 }
 .aboutVideoSection__container__service:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
 }
-.aboutVideoSection__container__service:hover .aboutVideoSection__container__service__title {
+.aboutVideoSection__container__service:hover
+  .aboutVideoSection__container__service__title {
   color: #ffffff;
 }
-.aboutVideoSection__container__service:hover .aboutVideoSection__container__service__icon {
+.aboutVideoSection__container__service:hover
+  .aboutVideoSection__container__service__icon {
   filter: brightness(2);
 }
 .aboutVideoSection__container__service__icon {
@@ -1815,12 +1898,14 @@
   }
 }
 .aboutVideoSection__container__service--hide:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
 }
-.aboutVideoSection__container__service--hide:hover .aboutVideoSection__container__service--hide__title {
+.aboutVideoSection__container__service--hide:hover
+  .aboutVideoSection__container__service--hide__title {
   color: #ffffff;
 }
-.aboutVideoSection__container__service--hide:hover .aboutVideoSection__container__service--hide__icon {
+.aboutVideoSection__container__service--hide:hover
+  .aboutVideoSection__container__service--hide__icon {
   filter: brightness(2);
 }
 .aboutVideoSection__container__service--hide__icon {
@@ -1927,7 +2012,8 @@
     padding-top: 10rem;
   }
 }
-.dark__subtitle, .dark__title {
+.dark__subtitle,
+.dark__title {
   color: white;
 }
 .dark__swiper-slide {
@@ -2128,10 +2214,10 @@
   justify-content: center;
   height: 0.8rem;
   margin-top: 3.2rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .counterSection .swiperMenuImages-pagination .swiper-pagination-bullet-active {
-  background: #BEAD8E;
+  background: #bead8e;
 }
 
 .swiperRoomsList {
@@ -2168,7 +2254,7 @@
   opacity: 1;
 }
 .swiperRoomsList-pagination .swiper-pagination-bullet-active {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   color: #ffffff;
 }
 .swiperRoomsList .swiper-slide {
@@ -2269,7 +2355,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .swiperRoomsList .roomSlider__slides__container--price--perNight {
   font-weight: 700;
@@ -2284,7 +2370,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .swiperRoomsList .roomSlider__slides__container--bookNow:hover {
   cursor: pointer;
@@ -2328,7 +2414,7 @@
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.3rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .roomSection__price--perNight {
   font-weight: 400;
@@ -2379,7 +2465,7 @@
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.3rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .roomSectionDesktop__container__price--perNight {
   font-weight: 400;
@@ -2447,7 +2533,7 @@
   margin: 1.3rem 0 1.9rem 0;
   padding: 2.4rem 2.7rem 2.1rem 2.9rem;
   border-style: none;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2455,10 +2541,12 @@
   line-height: 1.5rem;
   color: #777777;
 }
-.singleRoomAvailabilitySection__form__block input::-webkit-calendar-picker-indicator {
+.singleRoomAvailabilitySection__form__block
+  input::-webkit-calendar-picker-indicator {
   height: 2rem;
   width: 2rem;
-  filter: invert(46%) sepia(0%) saturate(667%) hue-rotate(141deg) brightness(102%) contrast(91%);
+  filter: invert(46%) sepia(0%) saturate(667%) hue-rotate(141deg)
+    brightness(102%) contrast(91%);
 }
 .singleRoomAvailabilitySection__text {
   padding-top: 4.8rem;
@@ -2494,7 +2582,7 @@
   height: 1px;
   margin-top: 1.3rem;
   margin-bottom: 3.5rem;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 .amenitiesSection__title {
   font-family: "Old Standard TT", serif;
@@ -2580,7 +2668,7 @@
   position: absolute;
   width: 4.5rem;
   height: 4.5rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   border: 4px solid #ffffff;
   border-radius: 50%;
   text-align: center;
@@ -2608,7 +2696,7 @@
   font-size: 1.4rem;
   line-height: 1.5rem;
   letter-spacing: 0.28rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .employeeSection__container__text {
   margin-top: 2.5rem;
@@ -2656,11 +2744,12 @@
 }
 @media all and (min-width: 1000px) {
   .relatedRoomsSection .roomSlider__slides,
-.relatedRoomsSection .swiper {
+  .relatedRoomsSection .swiper {
     display: none;
   }
 }
-.relatedRoomsSection .roomSlider__slides-button-prev, .relatedRoomsSection .roomSlider__slides-button-next,
+.relatedRoomsSection .roomSlider__slides-button-prev,
+.relatedRoomsSection .roomSlider__slides-button-next,
 .relatedRoomsSection .swiper-button-prev,
 .relatedRoomsSection .swiper-button-next {
   user-select: none;
@@ -2678,15 +2767,17 @@
   font-weight: 700;
   cursor: pointer;
 }
-.relatedRoomsSection .roomSlider__slides-button-prev:after, .relatedRoomsSection .roomSlider__slides-button-next:after,
+.relatedRoomsSection .roomSlider__slides-button-prev:after,
+.relatedRoomsSection .roomSlider__slides-button-next:after,
 .relatedRoomsSection .swiper-button-prev:after,
 .relatedRoomsSection .swiper-button-next:after {
   font-size: 1rem;
 }
-.relatedRoomsSection .roomSlider__slides-button-prev:hover, .relatedRoomsSection .roomSlider__slides-button-next:hover,
+.relatedRoomsSection .roomSlider__slides-button-prev:hover,
+.relatedRoomsSection .roomSlider__slides-button-next:hover,
 .relatedRoomsSection .swiper-button-prev:hover,
 .relatedRoomsSection .swiper-button-next:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   color: #ffffff;
 }
 .relatedRoomsSection .roomSlider__slides-button-prev,
@@ -2717,7 +2808,7 @@
 }
 @media all and (min-width: 1000px) {
   .relatedRoomsSection .roomSlider__slides--extras,
-.relatedRoomsSection .swiper--extras {
+  .relatedRoomsSection .swiper--extras {
     opacity: 1;
   }
 }
@@ -2730,7 +2821,7 @@
 }
 @media all and (min-width: 1000px) {
   .relatedRoomsSection .roomSlider__slides--roomImg,
-.relatedRoomsSection .swiper--roomImg {
+  .relatedRoomsSection .swiper--roomImg {
     max-width: 30%;
     display: inline-block;
   }
@@ -2753,7 +2844,7 @@
 }
 @media all and (min-width: 1000px) {
   .relatedRoomsSection .roomSlider__slides--title,
-.relatedRoomsSection .swiper--title {
+  .relatedRoomsSection .swiper--title {
     opacity: 1;
     display: inline-block;
     width: 25%;
@@ -2771,7 +2862,7 @@
 }
 @media all and (min-width: 1000px) {
   .relatedRoomsSection .roomSlider__slides--description,
-.relatedRoomsSection .swiper--description {
+  .relatedRoomsSection .swiper--description {
     opacity: 1;
     display: inline-block;
     width: 25%;
@@ -2793,7 +2884,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .relatedRoomsSection .roomSlider__slides__container--price--perNight,
 .relatedRoomsSection .swiper__container--price--perNight {
@@ -2809,7 +2900,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .relatedRoomsSection .roomSlider__slides__container--bookNow:hover,
 .relatedRoomsSection .swiper__container--bookNow:hover {
@@ -2887,7 +2978,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .relatedRoomsSection__swiper__slide__container__price--perNight {
   font-weight: 700;
@@ -2901,7 +2992,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .relatedRoomsSection__swiper__slide__container__bookNow:hover {
   cursor: pointer;
@@ -2946,7 +3037,7 @@
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 2.5rem;
-  color: #BEAD8E;
+  color: #bead8e;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -2956,7 +3047,7 @@
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  color: #BEAD8E;
+  color: #bead8e;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -2966,7 +3057,7 @@
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.3rem;
-  color: #DE5777;
+  color: #de5777;
   display: inline-block;
 }
 .offerRoomSection__room__priceContainer--perNightRed {
@@ -2975,7 +3066,7 @@
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.3rem;
-  color: #DE5777;
+  color: #de5777;
   display: inline-block;
 }
 .offerRoomSection__room__img {
@@ -2998,7 +3089,7 @@
     position: relative;
     top: -4rem;
     background-color: #ffffff;
-    border-top: 6px solid #BEAD8E;
+    border-top: 6px solid #bead8e;
     padding: 3rem;
   }
 }
@@ -3030,7 +3121,7 @@
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 2.5rem;
-  color: #BEAD8E;
+  color: #bead8e;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -3040,7 +3131,7 @@
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  color: #BEAD8E;
+  color: #bead8e;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -3050,7 +3141,7 @@
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.3rem;
-  color: #DE5777;
+  color: #de5777;
   display: inline-block;
 }
 .offerRoomSection__room__bigContainer__priceContainerDesktop--perNightRed {
@@ -3059,7 +3150,7 @@
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.3rem;
-  color: #DE5777;
+  color: #de5777;
   display: inline-block;
 }
 .offerRoomSection__room__bigContainer__subtitle {
@@ -3085,7 +3176,7 @@
 .offerRoomSection__room__bigContainer__separation {
   width: 100%;
   height: 1px;
-  background-color: #ECECEC;
+  background-color: #ececec;
   display: none;
 }
 @media all and (min-width: 1000px) {
@@ -3148,7 +3239,7 @@
   font-size: 1.4rem;
   line-height: 1.5rem;
   letter-spacing: 0.28rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .popularRoomsSection__title {
   text-align: center !important;
@@ -3169,7 +3260,8 @@
   margin: 4.8rem auto;
   background-color: #ffffff;
 }
-.popularRoomsSection .roomSlider__slides-button-prev, .popularRoomsSection .roomSlider__slides-button-next,
+.popularRoomsSection .roomSlider__slides-button-prev,
+.popularRoomsSection .roomSlider__slides-button-next,
 .popularRoomsSection .swiper-button-prev,
 .popularRoomsSection .swiper-button-next {
   user-select: none;
@@ -3187,15 +3279,17 @@
   font-weight: 700;
   cursor: pointer;
 }
-.popularRoomsSection .roomSlider__slides-button-prev:after, .popularRoomsSection .roomSlider__slides-button-next:after,
+.popularRoomsSection .roomSlider__slides-button-prev:after,
+.popularRoomsSection .roomSlider__slides-button-next:after,
 .popularRoomsSection .swiper-button-prev:after,
 .popularRoomsSection .swiper-button-next:after {
   font-size: 1rem;
 }
-.popularRoomsSection .roomSlider__slides-button-prev:hover, .popularRoomsSection .roomSlider__slides-button-next:hover,
+.popularRoomsSection .roomSlider__slides-button-prev:hover,
+.popularRoomsSection .roomSlider__slides-button-next:hover,
 .popularRoomsSection .swiper-button-prev:hover,
 .popularRoomsSection .swiper-button-next:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   color: #ffffff;
 }
 .popularRoomsSection .roomSlider__slides-button-prev,
@@ -3225,7 +3319,7 @@
 }
 @media all and (min-width: 1000px) {
   .popularRoomsSection .roomSlider__slides--extras,
-.popularRoomsSection .swiper--extras {
+  .popularRoomsSection .swiper--extras {
     opacity: 1;
   }
 }
@@ -3238,7 +3332,7 @@
 }
 @media all and (min-width: 1000px) {
   .popularRoomsSection .roomSlider__slides--roomImg,
-.popularRoomsSection .swiper--roomImg {
+  .popularRoomsSection .swiper--roomImg {
     max-width: 30%;
     display: inline-block;
   }
@@ -3261,7 +3355,7 @@
 }
 @media all and (min-width: 1000px) {
   .popularRoomsSection .roomSlider__slides--title,
-.popularRoomsSection .swiper--title {
+  .popularRoomsSection .swiper--title {
     opacity: 1;
     display: inline-block;
     width: 25%;
@@ -3279,7 +3373,7 @@
 }
 @media all and (min-width: 1000px) {
   .popularRoomsSection .roomSlider__slides--description,
-.popularRoomsSection .swiper--description {
+  .popularRoomsSection .swiper--description {
     opacity: 1;
     display: inline-block;
     width: 25%;
@@ -3301,7 +3395,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .popularRoomsSection .roomSlider__slides__container--price--perNight,
 .popularRoomsSection .swiper__container--price--perNight {
@@ -3317,7 +3411,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .popularRoomsSection .roomSlider__slides__container--bookNow:hover,
 .popularRoomsSection .swiper__container--bookNow:hover {
@@ -3399,7 +3493,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .popularRoomsSection__swiper__slide__container__price--perNight {
   font-weight: 700;
@@ -3413,7 +3507,7 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .popularRoomsSection__swiper__slide__container__bookNow:hover {
   cursor: pointer;
@@ -3533,7 +3627,7 @@
   transition: all 0.3s;
 }
 .mapSection .button-map:hover {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   opacity: 0.9;
 }
 .mapSection .location-table {
@@ -3563,7 +3657,7 @@
 }
 
 #map {
-  height: 60%;
+  height: 500px;
   width: 100%;
 }
 
@@ -3635,7 +3729,7 @@
   height: 6rem;
   width: fit-content;
   padding: 2.3rem 5.6rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 700;

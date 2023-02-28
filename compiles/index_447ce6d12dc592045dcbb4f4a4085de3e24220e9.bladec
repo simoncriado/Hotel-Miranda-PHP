@@ -45,7 +45,7 @@
 
  <!-- Availability Section -->
  <section class="availabilitySection">
- <div class="availabilitySection__container">
+ <form class="availabilitySection__container" action="/availability.php" method="POST">
  <div
  class="availabilitySection__container availabilitySection__container__arrival"
  >
@@ -57,6 +57,7 @@
  <input
  class="availabilitySection__container__arrival availabilitySection__container__arrival--input"
  type="date"
+ name="checkIn"
  />
  </div>
  <div
@@ -70,14 +71,16 @@
  <input
  class="availabilitySection__container__departure availabilitySection__container__departure--input"
  type="date"
+ name="checkOut"
  />
  </div>
  <button
  class="availabilitySection__container availabilitySection__container__button"
+ 
  >
  CHECK AVAILABILITY
  </button>
- </div>
+ </form>
  </section>
 
  <!-- About Us Section -->
@@ -162,165 +165,33 @@
  src="./resources/assets/images/roomExtras.png"
  alt="Room extras"
  />
- <?php if($room[3] === ""): ?>
+ <?php if($room["photo"] === ""): ?>
  <img
  class="roomSlider__slides--roomImg"
  src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
  alt="Hotel room"
  />
  <?php endif; ?>
- <?php if($room[3] !== ""): ?>
+ <?php if($room["photo"] !== ""): ?>
  <img
  class="roomSlider__slides--roomImg"
- src=<?php echo \htmlentities($room[3]??'', ENT_QUOTES, 'UTF-8', false); ?>
+ src=<?php echo \htmlentities($room["photo"]??'', ENT_QUOTES, 'UTF-8', false); ?>
 
  alt="Hotel room"
  />
  <?php endif; ?>
- <h1 class="roomSlider__slides--title"><?php echo \htmlentities($room[12]??'', ENT_QUOTES, 'UTF-8', false); ?></h1>
+ <h1 class="roomSlider__slides--title"><?php echo \htmlentities($room["bed_type"]??'', ENT_QUOTES, 'UTF-8', false); ?></h1>
  <p class="roomSlider__slides--description">
- <?php echo \htmlentities($room[8]??'', ENT_QUOTES, 'UTF-8', false); ?>
+ <?php echo \htmlentities($room["description"]??'', ENT_QUOTES, 'UTF-8', false); ?>
 
  </p>
  <p class="roomSlider__slides--price">
- $<?php echo \htmlentities($room[13] /100??'', ENT_QUOTES, 'UTF-8', false); ?><span class="roomSlider__slides--price--perNight"
+ $<?php echo \htmlentities($room["room_rate"] /100??'', ENT_QUOTES, 'UTF-8', false); ?><span class="roomSlider__slides--price--perNight"
  >/Night</span
  >
  </p>
  </div>
  <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
- <!-- <div class="swiper-slide">
- <img
- class="roomSlider__slides--extras"
- src="./resources/assets/images/roomExtras.png"
- alt="Room extras"
- />
- <img
- class="roomSlider__slides--roomImg"
- src="./resources/assets/images/room1.jpg"
- alt="Hotel room"
- />
- <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
- <p class="roomSlider__slides--description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <p class="roomSlider__slides--price">
- $345<span class="roomSlider__slides--price--perNight"
- >/Night</span
- >
- </p>
- </div>
- <div class="swiper-slide">
- <img
- class="roomSlider__slides--extras"
- src="./resources/assets/images/roomExtras.png"
- alt="Room extras"
- />
- <img
- class="roomSlider__slides--roomImg"
- src="./resources/assets/images/room2.jpg"
- alt="Hotel room"
- />
- <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
- <p class="roomSlider__slides--description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <p class="roomSlider__slides--price">
- $345<span class="roomSlider__slides--price--perNight"
- >/Night</span
- >
- </p>
- </div>
- <div class="swiper-slide">
- <img
- class="roomSlider__slides--extras"
- src="./resources/assets/images/roomExtras.png"
- alt="Room extras"
- />
- <img
- class="roomSlider__slides--roomImg"
- src="./resources/assets/images/room3.jpg"
- alt="Hotel room"
- />
- <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
- <p class="roomSlider__slides--description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <p class="roomSlider__slides--price">
- $345<span class="roomSlider__slides--price--perNight"
- >/Night</span
- >
- </p>
- </div>
- <div class="swiper-slide">
- <img
- class="roomSlider__slides--extras"
- src="./resources/assets/images/roomExtras.png"
- alt="Room extras"
- />
- <img
- class="roomSlider__slides--roomImg"
- src="./resources/assets/images/room4.jpeg"
- alt="Hotel room"
- />
- <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
- <p class="roomSlider__slides--description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <p class="roomSlider__slides--price">
- $345<span class="roomSlider__slides--price--perNight"
- >/Night</span
- >
- </p>
- </div>
- <div class="swiper-slide">
- <img
- class="roomSlider__slides--extras"
- src="./resources/assets/images/roomExtras.png"
- alt="Room extras"
- />
- <img
- class="roomSlider__slides--roomImg"
- src="./resources/assets/images/room5.jpeg"
- alt="Hotel room"
- />
- <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
- <p class="roomSlider__slides--description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <p class="roomSlider__slides--price">
- $345<span class="roomSlider__slides--price--perNight"
- >/Night</span
- >
- </p>
- </div>
- <div class="swiper-slide">
- <img
- class="roomSlider__slides--extras"
- src="./resources/assets/images/roomExtras.png"
- alt="Room extras"
- />
- <img
- class="roomSlider__slides--roomImg"
- src="./resources/assets/images/room6.jpeg"
- alt="Hotel room"
- />
- <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
- <p class="roomSlider__slides--description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <p class="roomSlider__slides--price">
- $345<span class="roomSlider__slides--price--perNight"
- >/Night</span
- >
- </p>
- </div> -->
  </div>
  <div class="swiper-button-prev"></div>
  <div class="swiper-button-next"></div>

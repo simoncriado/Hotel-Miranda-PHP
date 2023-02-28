@@ -49,11 +49,11 @@
               UNIQUE EXPERIENCE
             </p>
             <h1 class="roomSectionDesktop__container__subcontainer__title">
-            {{$room[12]}}
+            {{$room["bed_type"]}}
             </h1>
           </div>
           <p class="roomSectionDesktop__container__price">
-          ${{$room[13] /100}}<span class="roomSectionDesktop__container__price--perNight"
+          ${{$room["room_rate"] /100}}<span class="roomSectionDesktop__container__price--perNight"
               >/Night</span
             >
           </p>
@@ -65,7 +65,7 @@
           alt="Hotel room"
         />
         <p class="roomSectionDesktop__text">
-        {{$room[8]}}
+        {{$room["description"]}}
         </p>
       </section>
       <!-- Availability Section -->
@@ -73,36 +73,28 @@
         <p class="singleRoomAvailabilitySection__subtitle">
           Check Availability
         </p>
-        <form class="singleRoomAvailabilitySection__form">
+        <form class="singleRoomAvailabilitySection__form" action="/room-details.php?id={{ $room['id'] }}" method="POST">
           <div class="singleRoomAvailabilitySection__form__block">
             <label for="check-in-input">Check In</label>
-            <input id="check-in-input" type="date" />
+            <input id="check-in-input" type="date" name="checkIn" />
           </div>
           <div class="singleRoomAvailabilitySection__form__block">
             <label for="check-out-input">Check Out</label>
-            <input id="check-out-input" type="date" />
+            <input id="check-out-input" type="date" name="checkOut"/>
           </div>
           <button class="btn btn--light" type="submit">
             CHECK AVAILABILITY
           </button>
         </form>
+        @if ($available !== "undefined")
+          @if ($available == 1)
+            <p style="margin-top: 20px" class="singleRoomAvailabilitySection__subtitle" >Room available between selected dates</p>
+          @else
+            <p style="margin-top: 20px" class="singleRoomAvailabilitySection__subtitle" >Room booked between selected dates</p>
+          @endif
+        @endif
         <p class="singleRoomAvailabilitySection__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Sed ut
-          perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-          voluptatem.
+        {{$room["description"]}}
         </p>
       </section>
       <!-- Amenities Section -->
@@ -289,10 +281,7 @@
           class="cancellationSection__text singleRoomAvailabilitySection__text"
           style="padding-top: 0"
         >
-          Phasellus volutpat neque a tellus venenatis, a euismod augue
-          facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus.
-          Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to
-          get a full refund.
+          {{$room["cancellationPolicy"]}}
         </p>
       </section>
       <!-- Related Rooms Section -->
