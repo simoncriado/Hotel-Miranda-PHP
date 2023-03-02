@@ -11,11 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $checkOut = $checkOut[2] . "-" . $checkOut[1] . "-" . $checkOut[0];
 
 
-    // $sql = "SELECT rooms.* FROM rooms LEFT JOIN bookings ON rooms.room_number = bookings.roomNumber WHERE bookings.checkIn NOT BETWEEN '".$checkIn."' AND '".$checkOut."' AND bookings.checkOut NOT BETWEEN '".$checkIn."' AND '".$checkOut."';";
-    $sql = "SELECT DISTINCT rooms.* FROM rooms LEFT JOIN bookings ON rooms.room_number = bookings.roomNumber WHERE (bookings.checkin > '".$checkOut."' AND bookings.checkout < '".$checkIn."') OR bookings.id IS NULL;";
+   
+    // $sql = "SELECT DISTINCT rooms.* FROM rooms LEFT JOIN bookings ON rooms.room_number = bookings.roomNumber WHERE (bookings.checkin > '".$checkOut."' AND bookings.checkOut > '".$checkOut."' OR bookings.checkIn < '".$checkIn."' AND bookings.checkout < '".$checkIn."') OR bookings.id IS NULL;";
+    $sql = "SELECT * FROM bookings WHERE ((bookings.checkin < '".$checkIn."' AND bookings.checkOut > '".$checkIn."') OR (bookings.checkIn > '".$checkIn."' AND bookings.checkout < '".$checkOut."') OR (bookings.checkIn < '".$checkOut."' AND bookings.checkout > '".$checkOut."') OR (bookings.checkIn < '".$checkIn."' AND bookings.checkout > '".$checkOut."'));";
     $result = $conn->query($sql);
+    print_r($result->fetch_all());
 
-    echo $blade->run("rooms", ["rooms" => $result->fetch_all(MYSQLI_ASSOC)]);
+    // echo $blade->run("rooms", ["rooms" => $result->fetch_all(MYSQLI_ASSOC)]);
 
     $conn->close();
 } else {
